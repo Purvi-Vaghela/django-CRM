@@ -7,24 +7,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
-        {% comment %} {% if user.is_authenticated %}
-        <li class="nav-item">
+        {% if user.is_authenticated %}
+        {% comment %} <li class="nav-item">
           <a class="nav-link" href="{% url 'add_record' %}">Add Record</a>
         </li> {% endcomment %}
-
-        {% comment %} <li class="nav-item">
-          <a class="nav-link" href="{% url 'logout' %}">Login</a>
-        </li> {% endcomment %}
-      {% comment %} 
-        {% else %}
         <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+        </li>
+
+        {% else %}
+        {% comment %} <li class="nav-item">
           <a class="nav-link" href="{% url 'register' %}">Register</a>
         </li> {% endcomment %}
-
-        {% comment %} <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="{% url 'home' %}">Login</a>
         </li>        
-        {% endif %} {% endcomment %}
+        {% endif %}
         
         
       </ul>
