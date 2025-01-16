@@ -117,6 +117,3 @@ pip install django mysqlclient
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## Contact
-
-For questions or support, contact [your email or GitHub profile link].
